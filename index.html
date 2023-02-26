@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Mario Alla | Founder at Konecto | Resume </title>
-<!-- Firebase Installation -->
+
+	<!-- Firebase Installation -->
 	<script type="module">
 		// Import the functions you need from the SDKs you need
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
@@ -24,6 +25,11 @@
 		  measurementId: "G-0LRF6KFJ7Y"
 		};
 	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
+	
 	<!-- Meta Data -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
