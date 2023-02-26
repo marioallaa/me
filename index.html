@@ -5,17 +5,32 @@
     <meta charset="utf-8">
     <title>Mario Alla | Founder at Konecto | Resume </title>
 
-	<!-- Firebase Installation -->
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LRF6KFJ7Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-0LRF6KFJ7Y');
-</script>
-	
+	<!-- Firebase Installation -->
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyCJxNCLdUZVbghr_946yrQiNKDKHnRHUAU",
+		  authDomain: "mario-alla.firebaseapp.com",
+		  projectId: "mario-alla",
+		  storageBucket: "mario-alla.appspot.com",
+		  messagingSenderId: "869626543019",
+		  appId: "1:869626543019:web:ba11d306552eea0adb70ee",
+		  measurementId: "G-0LRF6KFJ7Y"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
+
 	<!-- Meta Data -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
